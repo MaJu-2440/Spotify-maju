@@ -1,0 +1,139 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.logo_container {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.logo_container img {
+    height: 100%;
+}
+
+.header_navigation {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+.header_navigation-home_btn {
+    background-color: #121212;
+    width: 24px;
+    border-radius: 50%;
+    padding: .5rem;
+    cursor: pointer;
+    color: #666;
+}
+
+.header_navigation-input {
+    background-color: #121212;
+    height: 24px;
+    padding: .5rem;
+    border-radius: 42px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+}
+.header_navigation-input:hover {
+    background-color: #212121;
+}
+
+.header_navigation-input_search {
+    padding: .3rem;
+    width: 20px;
+}
+
+.header_navigation-input input {
+    display: flex;
+    padding: .5rem;
+    max-width: 250px;
+    width: 250px;
+
+    background: transparent;
+    border: none;
+    outline: none;
+
+    font-size: 1rem;
+    color: #fff;
+}
+
+.header_navigation-input_div {
+    height: 20px;
+    width: 1px;
+    background-color: #666;
+    margin: .3rem;
+}
+
+.header_navigation-input_library {
+    padding: .5rem;
+    cursor: pointer;
+    width: 24px;
+}
+
+.header_navigation-nav_links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: #666;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.header_navigation-nav_links li {
+    cursor: pointer;
+}
+
+.header_navigation-nav_links a {
+    text-decoration: none;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+.header_navigation-nav_links a img {
+    width: 24px;
+}
+
+.header_navigation-nav_links .header_navigation-button {
+    border: none;
+    border-radius: 32px;
+    background-color: #fff;
+    color: #000;
+    
+    font-weight: 600;
+    
+    padding: 1rem;
+    cursor: pointer;
+}
+.header_navigation-nav_links .header_navigation-button:hover {
+    color: #000;
+    transform: scale(1.05);
+    transition: all .22s ease-in;
+}
+
+.header_navigation-nav_links li:hover,
+.header_navigation-nav_links li a:hover,
+.header_navigation-input_library:hover,
+.header_navigation-home_btn:hover {
+    color: #fff;
+    transform: scale(1.05);
+    transition: all .22s ease-in;
+}
+
+.header_navigation-home_btn img,
+.header_navigation-input_search img,
+.header_navigation-input_library img,
+.header_navigation-nav_links img {
+    width: 100%;
+}
