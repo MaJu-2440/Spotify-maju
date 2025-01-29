@@ -1,0 +1,67 @@
+.disclaimer {
+    background: linear-gradient(90deg, #FF39E0 0%, #8741FF 50%, #0093D4 100%);
+
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.disclaimer_content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.disclaimer_content .disclaimer_content-title {
+    font-size: .8rem;
+    font-weight: 700;
+    margin-bottom: .2rem;
+}
+
+.disclaimer_content .disclaimer_content-text {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.disclaimer_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.disclaimer_button button {
+    border: none;
+    border-radius: 32px;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all .22s ease;
+    cursor: pointer;
+}
+.disclaimer_button:hover button {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 1000px) {
+    .disclaimer_button button {
+        padding: .5rem;
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .disclaimer {
+        padding: 1.5rem;
+        flex-direction: column;
+    }
+
+    .disclaimer_content {
+        text-align: center;
+        align-items: center;
+    }
+
+    .disclaimer_button button {
+        padding: .5rem 1.5rem;
+        margin-top: 1rem;
+    }
+}

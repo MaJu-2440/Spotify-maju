@@ -1,18 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root {
+    --bg-color: #121212;
+    --bg-hover: #212121;
+    --color-lightgray: #666;
+    --color-white: #fff;
+    --color-black: #000;
+    --color-border-gray: #8e8e8e;
+}
+
 body {
     background-color: #000;
     color: #fff;
     font-family: 'Roboto', sans-serif;
 
     min-height: 100vh;
+    margin:.5rem;
 
     display: grid;
-    grid-template-rows: 3.5rem 1fr;
+    row-gap: .8rem;
+    column-gap: 1rem;
+    grid-template-rows: 3.5rem 1fr 4rem;
     grid-template-columns: 400px 1fr;
     grid-template-areas:
     'header header'
-    'sidebar main';
+    'sidebar main'
+    'disclaimer disclaimer';
 }
 header {
     grid-area: header;
@@ -22,4 +35,33 @@ header {
 }
 main {
     grid-area: main;
+}
+.disclaimer {
+    grid-area: disclaimer;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        grid-template-columns: 300px 1fr;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        grid-template-rows: 3.5rem 1fr 4.5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+
+        position: relative;
+    }
+
+    .disclaimer {
+        position: absolute;
+        bottom: 0;
+    }
 }
